@@ -1,0 +1,22 @@
+[project]
+name = "bptarget"
+version = "1.0.0"
+description = "A risk-aware individualized blood pressure target to avoid hypotension in surgery (ECC 2027 submission)"
+license = "MIT"
+requires-python = ">=3.12"
+# Pinned: the versions the paper's numbers were computed with.
+dependencies = [
+    "numpy==2.4.2",
+    "scipy==1.18.0",
+    "pandas==3.0.0",
+    "matplotlib==3.10.8",
+    "joblib==1.5.3",
+    "casadi==3.7.2",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["bptarget"]
